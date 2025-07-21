@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gallery - Latehar Tourism</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f2fff2;
+      }
+
+      .header {
+        background-color: #004d00;
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .header h1 {
+        font-size: 48px;
+        margin: 0;
+      }
+
+      .header p {
+        color: yellow;
+        font-size: 20px;
+        margin: 5px;
+      }
+
+      .navbar {
+        background-color: #e0f5e9;
+        text-align: center;
+        padding: 12px;
+      }
+
+      .navbar a {
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 18px;
+        color: #004d00;
+      }
+
+      .navbar .active {
+        font-weight: bold;
+        color: #007700;
+      }
+
+      .divider {
+        border: none;
+        height: 4px;
+        background-color: green;
+        width: 80%;
+        margin: 20px auto;
+      }
+
+      .gallery-container {
+        max-width: 1000px;
+        margin: 30px auto;
+        padding: 20px;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .gallery-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+      }
+
+      .gallery-item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+      }
+
+      .gallery-item img {
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+      }
+
+      .gallery-item:hover img {
+        transform: scale(1.05);
+      }
+
+      .gallery-item .caption {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 10px;
+        color: white;
+        background: rgba(0, 77, 0, 0.8); /* green overlay */
+        text-align: center;
+        font-size: 16px;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+
+      .gallery-item:hover .caption {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+   
+    <div class="header">
+      <h1>LATEHAR TOURISM</h1>
+      <p><i>Explore the Unseen Beauty of Jharkhand</i></p>
+    </div>
+
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html" class="active">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <hr class="divider" />
+
+    <div class="gallery-container">
+      <h2 style="color: #004d00; text-align: center">
+        📸 Explore the Beauty of Latehar
+      </h2>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="image/netarhat.jpeg" alt="Netarhat" />
+          <a href="netarhat.html"> <div class="caption">Netarhat</div> </a>
+        </div>
+        <div class="gallery-item">
+            <img src="image/lodh.jpeg" alt="Lodh Falls" />
+            <a href="lodh_falls.html"></a><div class="caption">Lodh Falls</div>
+          </a>
+        </div>
+        <div class="gallery-item">
+            <img src="image/koel.jpg" alt="Koel River" />
+            <a href="koel_view_point.html">
+              <div class="caption">Koel River</div></a
+            >
+          </a>
+        </div>
+        <div class="gallery-item">
+          <img src="image/mirchaiya.jpg" alt="Mirchaiya" />
+          <a href="michaiya_falls.html"><div class="caption">Mirchaiya</div></a>
+        </div>
+        <div class="gallery-item">
+          <img src="image/netarhat_lake.jpeg" alt="Netarhat Lake" />
+          <a href="netarhat_dam.html"><div class="caption">Netarhat Lake</div></a>
+        </div>
+        <div class="gallery-item">
+          <img src="image/netarhat_pine.jpg" alt="Pine Forest" />
+          <a href="pine_forest.html"><div class="caption">Pine Forest</div></a>
+        </div>
+        <div class="gallery-item">
+          <img src="image/sugga_waterfall.jpg" alt="Sugga Waterfall" />
+         <a href="suga_bandh.html"> <div class="caption">Sugga Waterfall</div></a>
+        </div>
+        <div class="gallery-item">
+          <a href="palamu_fort.html">
+            <img src="image/palamu_killa.jpg" alt="Palamu Fort" />
+            <div class="caption">Palamu Fort</div>
+          </a>
+        </div>
+        <div class="gallery-item">
+          <img src="image/Sunset_point.jpg" alt="Sunset Point" />
+          <a href="sunset_point.html"><div class="caption">Sunset Point</div></a>
+        </div>
+        <div class="gallery-item">
+          <img src="image/tattaha.jpg (3).jpg" alt="Tattaha Waterfall" />
+          <a href="tattapani.html"><div class="caption">TattaPani Waterfall</div></a>
+        </div>
+      </div>
+    </div>
+<footer class="footer">
+  <p>&copy; 2025 Prince Yadav. All rights reserved.</p>
+</footer>
+
+  </body>
+</html>
